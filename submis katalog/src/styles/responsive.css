@@ -1,0 +1,93 @@
+@media screen and (min-width : 400px){
+    .restaurants{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  
+  @media screen and (max-width : 660px){
+    nav{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    nav > h1 {
+      text-align: right;
+      padding-right: 20px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .drawer {
+      z-index: 10;
+      background-color: #FFBF00;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+      width: 200px;
+      position: absolute;
+      text-align: left;
+      transform: translate(-300px, 0);
+      transition: transform 0.3s ease-in-out;
+      }
+      nav ul{
+        padding-top: 20px;
+      }
+      nav ul li{
+        display: block;
+        padding: 20px;
+      }
+      .open{
+        transform: translate(0, 0);
+      }
+      .hamburger {
+        width: 44px;
+        height: 44px;
+        font-size: 44px;
+        
+      }
+    
+      .hamburger{
+        background-color: transparent;
+        border: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 12;
+      }
+    }
+  @media screen and (min-width : 661px){
+    .hamburger{
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width : 700px){
+  
+    .restaurants{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+    }
+  }
+  
+  @media screen and (min-width : 900px){
+    .restaurants{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+    }
+  }
+  
+  @media screen and (min-width : 1200px){
+    
+    .restaurants{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+    }
+    main{
+      max-width: 1200px;
+      
+    }
+    .pictureHero{
+      min-width: 1000px;
+    }
+  }
